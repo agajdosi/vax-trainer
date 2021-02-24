@@ -29,7 +29,7 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile
   $('.privacylink').hide();
 }
 
-var wavesurfer = WaveSurfer.create({ container: '#waveform', waveColor: 'yellow' });
+var wavesurfer = WaveSurfer.create({ container: '#waveform', waveColor: 'white' });
 
 var microphone = Object.create(WaveSurfer.Microphone);
 
@@ -53,6 +53,7 @@ Pace.on('done', function () {
   if ($('#introsound')[0].paused) {
     // audio not playing. show auto play hint
     console.log('show runs');
+    $('#intro').css('display', 'none').hide();
     $('#noAutoplay').css('display', 'flex').hide().fadeIn();
   } else {
     $('.h1, .h2, .h3, .h4, .h5').addClass('go');
@@ -74,6 +75,7 @@ Pace.on('done', function () {
 
 $('#noAutoplay').click(function () {
   $('#noAutoplay').hide();
+  $('#intro').css('display', 'none').hide().fadeIn();
   $('.h1, .h2, .h3, .h4, .h5').addClass('go');
   $('#introsound').trigger('play');
   setTimeout(function () {
@@ -181,10 +183,10 @@ function startTraining() {
   $('#introvideo').show();
   $('#introvideo').get(0).play();
   setTimeout(function () {
-    $('#subtitle').empty().text('Sven will ask you three questions.');
+    $('#subtitle').empty().text('Zdravotní kontrolor Úřadu vlády ČR se Vás zeptá na několik otázek.');
   }, 6000);
   setTimeout(function () {
-    $('#subtitle').empty().text('Answer them appropriately to get in.');
+    $('#subtitle').empty().text('Odpovězte správně a dostaňte se do očkovacího centra.');
   }, 12000);
   setTimeout(function () {
     $('#subtitle').empty();

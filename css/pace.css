@@ -1,5 +1,5 @@
 html{
-  background: black;
+  background: #140d41;
 }
 
 .pace {
@@ -15,7 +15,7 @@ html{
 }
 
 .pace .pace-progress {
-  background-color: rgba(255, 255, 0, 1);
+  background-color: white;
   position: fixed;
   z-index: -1;
   top: 0;
@@ -35,5 +35,5 @@ html{
   font-size: 5rem;
   line-height: 1;
   text-align: right;
-  color: black;
+  color: #140d41;
 }
