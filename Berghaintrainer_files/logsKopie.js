@@ -608,11 +608,12 @@ function initCamera() {
 
   var y = d3.scale.linear().domain([0, 1]).range([0, height]);
 
+  console.log(height, margin.top, margin.bottom);
   var svg = d3
     .select('#emotion_chart')
     .append('svg')
-    .attr('width', width + margin.left + margin.right)
-    .attr('height', height + margin.top + margin.bottom);
+    .attr('width', 100 + width + margin.left + margin.right)
+    .attr('height', 30 + height + margin.top + margin.bottom);
   svg
     .selectAll('text.labels')
     .data(emotionData)
@@ -631,7 +632,7 @@ function initCamera() {
     .text(function (datum) {
       return datum.value;
     })
-    .attr('fill', 'yellow')
+    .attr('fill', 'white')
     .attr('class', 'labels');
 
   function updateData(data) {

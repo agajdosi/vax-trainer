@@ -779,7 +779,7 @@ transition:ease 0.2s;
 
 .factors{
     position: absolute;
-    width: 300px;
+    width: 400px;
     word-spacing: 10px;
     left: 22px;
     color: white;
@@ -807,16 +807,16 @@ bottom: 20px;
 }
 
 #weite40{
-  transform: translateX(-14px);
+  transform: translateX(0px);
 }
 #weite100{
-  transform: translateX(-10px);
+  transform: translateX(15px);
 }
 #weite160{
-  transform: translateX(-2px);
+  transform: translateX(40px);
 }
 #weite220{
-  transform: translateX(5px);
+  transform: translateX(65px);
 }
 
 @media only screen and (max-width: 600px) {
