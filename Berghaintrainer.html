@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0028)https://berghaintrainer.com/ -->
+
 <html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" lang="" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -74,8 +74,6 @@
       setCookie("hasPlayed", true, 1);
     }
 
-    
-
     </script>
 
     <link rel="stylesheet" href="css/normalize.min.css">
@@ -85,9 +83,12 @@
     <script src="./Berghaintrainer_files/modernizr-2.8.3.min.js"></script>
 <meta http-equiv="origin-trial" content="A2shzsdPO+RKe83bUqT9oVkYwGZN6j9O7nrcOASNFPuQz8HefgVYb9qAqn6coNCSDIRtXoi6ybCrjEsYh3caFgIAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MTM0OTU4NjgsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><link rel="preload" href="./Berghaintrainer_files/f(3).txt" as="script"><script type="text/javascript" src="./Berghaintrainer_files/f(3).txt"></script><link rel="preload" href="./Berghaintrainer_files/f(4).txt" as="script"><script type="text/javascript" src="./Berghaintrainer_files/f(4).txt"></script></head>
 
-<body class="  pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+<body class="pace-done">
+    
+<div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
   <div class="pace-progress-inner"></div>
 </div>
+
 <div class="pace-activity"></div></div>
     <script src="./Berghaintrainer_files/pace.min.js"></script>
 
@@ -128,8 +129,8 @@
     <audio src="videos/soundintro.mp3" id="introsound"></audio>
     <div id="container_all">
         <a id="sansho" target="_blank" href="http://sansho.studio/">by sansho</a>
-        <span class="imprintlink inactive"></span>
-        <span class="privacylink inactive"></span>
+        <span class="imprintlink inactive">2020</span>
+        
         <div id="cam_container" class="container_small">
             <video id="videoel" width="300" height="225" preload="auto" loop="">
             </video>
@@ -234,21 +235,21 @@
             <select id="select_language" onchange="updateCountry()"></select>
             <select id="select_dialect"></select>
             <div id="info">
-                <p id="info_start">Click on the microphone icon and begin speaking.</p>
-                <p id="info_speak_now">Speak now.</p>
-                <p id="info_no_speech">No speech was detected. You may need to adjust your
+                <p id="info_start">Klikněte na ikonu mikrofonu a začněte mluvit.</p>
+                <p id="info_speak_now">Mluvte.</p>
+                <p id="info_no_speech">Hlas nebyl rozpoznán. Možná budete muset
                     <a href="https://support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892">
-                        microphone settings</a>.</p>
+                        změnit nastavení mikrofonu</a>.</p>
                 <p id="info_no_microphone" style="display:none">
-                    No microphone was found. Ensure that a microphone is installed and that
+                    Mikrofon nebyl detekován. Ujistěte se, že máte zapojený mikrofon a že jeho
                     <a href="https://support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892">
-                        microphone settings</a> are configured correctly.</p>
-                <p id="info_allow">Click the "Allow" button above to enable your microphone.</p>
-                <p id="info_denied">Permission to use microphone was denied.</p>
-                <p id="info_blocked">Permission to use microphone is blocked. To change, go to chrome://settings/contentExceptions#media-stream</p>
-                <p id="info_upgrade">Web Speech API is not supported by this browser. Upgrade to
+                        nastavení</a> je správné.</p>
+                <p id="info_allow">Klikněte nahoře na tlačítko "Povolit" pro aktivaci mikrofonu.</p>
+                <p id="info_denied">Povolení k použití mikrofonu bylo odmítnuto.</p>
+                <p id="info_blocked">Povolení k použití mikrofonu je zablokováno. Pro změnu jděte na adresu chrome://settings/contentExceptions#media-stream</p>
+                <p id="info_upgrade">Web Speech API není tímto prohlížečem podporováno. Upgradujte prosím na
                     <a href="https://www.google.com/chrome">Chrome</a>
-                    version 25 or later.</p>
+                    ve verzi 25 nebo vyšší.</p>
             </div>
             <div id="results">
                 <span id="final_span" class="final"></span>
@@ -259,319 +260,6 @@
         </div>
 
         <div id="redFlash" style="display: none;"></div>
-        <div id="imprint">
-            <div class="imprint">
-                <h1>Imprint
-                    <br>
-                </h1>
-                <div id="imprintname">Fabian Burghardt, Vinzenz Aubry</div>
-                Holteistr. 12
-                <br> 10245 Berlin, Germany
-                <br> Mail:
-                <strong>complaints(ät)berghaintrainer.com</strong>
-                <br> www.berghaintrainer.com
-                <br>
-
-                <br> Berghaintrainer.com speichert keinerlei Video-/Audio Daten.
-                <br> Die Inhalte dieser Website werden mit größtmöglicher Sorgfalt erstellt. Der Anbieter übernimmt jedoch keine
-                Gewähr für die Richtigkeit, Vollständigkeit und Aktualität der bereitgestellten Inhalte. Die Nutzung der
-                Inhalte der Website erfolgt auf eigene Gefahr des Nutzers. Namentlich gekennzeichnete Beiträge geben die
-                Meinung des jeweiligen Autors und nicht immer die Meinung des Anbieters wieder. Mit der reinen Nutzung der
-                Website des Anbieters kommt keinerlei Vertragsverhältnis zwischen dem Nutzer und dem Anbieter zustande.
-                <br>
-                <br> Die auf dieser Website veröffentlichten Inhalte unterliegen dem deutschen Urheber- und Leistungsschutzrecht.
-                Jede vom deutschen Urheber- und Leistungsschutzrecht nicht zugelassene Verwertung bedarf der vorherigen schriftlichen
-                Zustimmung des Anbieters oder jeweiligen Rechteinhabers. Dies gilt insbesondere für Vervielfältigung, Bearbeitung,
-                Übersetzung, Einspeicherung, Verarbeitung bzw. Wiedergabe von Inhalten in Datenbanken oder anderen elektronischen
-                Medien und Systemen. Inhalte und Rechte Dritter sind dabei als solche gekennzeichnet. Die unerlaubte Vervielfältigung
-                oder Weitergabe einzelner Inhalte oder kompletter Seiten ist nicht gestattet und strafbar. Lediglich die
-                Herstellung von Kopien und Downloads für den persönlichen, privaten und nicht kommerziellen Gebrauch ist
-                erlaubt. Die Darstellung dieser Website in fremden Frames ist nur mit schriftlicher Erlaubnis zulässig.Der
-                Anbieter weist ausdrücklich darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation
-                per E-Mail) Sicherheitslücken aufweisen und nicht lückenlos vor dem Zugriff durch Dritte geschützt werden
-                kann. Die Verwendung der Kontaktdaten des Impressums zur gewerblichen Werbung ist ausdrücklich nicht erwünscht,
-                es sei denn der Anbieter hatte zuvor seine schriftliche Einwilligung erteilt oder es besteht bereits eine
-                Geschäftsbeziehung. Der Anbieter und alle auf dieser Website genannten Personen widersprechen hiermit jeder
-                kommerziellen Verwendung und Weitergabe ihrer Daten.
-                <br>
-                <br> Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung
-                von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen.
-                Der Betreiber der Seiten behält sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung
-                von Werbeinformationen, etwa durch Spam-Mails, vor.
-                <br>
-                <br> Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. („Google“). Google Analytics
-                verwendet sog. „Cookies“, Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der
-                Benutzung der Website durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung
-                dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert.
-                Im Falle der Aktivierung der IP-Anonymisierung auf dieser Webseite, wird Ihre IP-Adresse von Google jedoch
-                innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den
-                Europäischen Wirtschaftsraum zuvor gekürzt. Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server
-                von Google in den USA übertragen und dort gekürzt. Im Auftrag des Betreibers dieser Website wird Google diese
-                Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten zusammenzustellen
-                und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen gegenüber dem Websitebetreiber
-                zu erbringen. Die im Rahmen von Google Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit
-                anderen Daten von Google zusammengeführt. Sie können die Speicherung der Cookies durch eine entsprechende
-                Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall
-                gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können. Sie können
-                darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten
-                (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem sie
-                das unter dem folgenden Link (http://tools.google.com/dlpage/gaoptout?hl=de) verfügbare Browser-Plugin herunterladen
-                und installieren.
-            </div>
-        </div>
-
-        <div id="privacy">
-            <div class="privacy">
-                <h1>Privacy Policy</h1>
-                <h2>1. An overview of data protection</h2>
-                <h3>General</h3>
-                <p>The following gives a simple overview of what happens to your personal information when you visit our website.
-                    Personal information is any data with which you could be personally identified. Detailed information
-                    on the subject of data protection can be found in our privacy policy found below.</p>
-                <h3>Data collection on our website</h3>
-                <p>
-                    <strong>Who is responsible for the data collection on this website?</strong>
-                </p>
-                <p>The data collected on this website are processed by the website operator. The operator's contact details
-                    can be found in the website's required legal notice.</p>
-                <p>
-                    <strong>How do we collect your data?</strong>
-                </p>
-                <p>Some data are collected when you provide it to us. This could, for example, be data you enter on a contact
-                    form.</p>
-                <p>Other data are collected automatically by our IT systems when you visit the website. These data are primarily
-                    technical data such as the browser and operating system you are using or when you accessed the page.
-                    These data are collected automatically as soon as you enter our website.</p>
-                <p>
-                    <strong>What do we use your data for?</strong>
-                </p>
-                <p>Part of the data is collected to ensure the proper functioning of the website. Other data can be used to
-                    analyze how visitors use the site.</p>
-                <p>
-                    <strong>What rights do you have regarding your data?</strong>
-                </p>
-                <p>You always have the right to request information about your stored data, its origin, its recipients, and
-                    the purpose of its collection at no charge. You also have the right to request that it be corrected,
-                    blocked, or deleted. You can contact us at any time using the address given in the legal notice if you
-                    have further questions about the issue of privacy and data protection. You may also, of course, file
-                    a complaint with the competent regulatory authorities.</p>
-                <h3>Analytics and third-party tools</h3>
-                <p>When visiting our website, statistical analyses may be made of your surfing behavior. This happens primarily
-                    using cookies and analytics. The analysis of your surfing behavior is usually anonymous, i.e. we will
-                    not be able to identify you from this data. You can object to this analysis or prevent it by not using
-                    certain tools. Detailed information can be found in the following privacy policy.</p>
-                <p>You can object to this analysis. We will inform you below about how to exercise your options in this regard.</p>
-                <h2>2. General information and mandatory information</h2>
-                <h3>Data protection</h3>
-                <p>The operators of this website take the protection of your personal data very seriously. We treat your personal
-                    data as confidential and in accordance with the statutory data protection regulations and this privacy
-                    policy.</p>
-                <p>If you use this website, various pieces of personal data will be collected. Personal information is any data
-                    with which you could be personally identified. This privacy policy explains what information we collect
-                    and what we use it for. It also explains how and for what purpose this happens.</p>
-                <p>Please note that data transmitted via the internet (e.g. via email communication) may be subject to security
-                    breaches. Complete protection of your data from third-party access is not possible.</p>
-                <h3>Revocation of your consent to the processing of your data</h3>
-                <p>Many data processing operations are only possible with your express consent. You may revoke your consent
-                    at any time with future effect. An informal email making this request is sufficient. The data processed
-                    before we receive your request may still be legally processed.</p>
-                <h3>SSL or TLS encryption</h3>
-                <p>This site uses SSL or TLS encryption for security reasons and for the protection of the transmission of confidential
-                    content, such as the inquiries you send to us as the site operator. You can recognize an encrypted connection
-                    in your browser's address line when it changes from "http://" to "https://" and the lock icon is displayed
-                    in your browser's address bar.</p>
-                <p>If SSL or TLS encryption is activated, the data you transfer to us cannot be read by third parties.</p>
-                <h3>Information, blocking, deletion</h3>
-                <p>As permitted by law, you have the right to be provided at any time with information free of charge about
-                    any of your personal data that is stored as well as its origin, the recipient and the purpose for which
-                    it has been processed. You also have the right to have this data corrected, blocked or deleted. You can
-                    contact us at any time using the address given in our legal notice if you have further questions on the
-                    topic of personal data.</p>
-                <h3>Opposition to promotional emails</h3>
-                <p>We hereby expressly prohibit the use of contact data published in the context of website legal notice requirements
-                    with regard to sending promotional and informational materials not expressly requested. The website operator
-                    reserves the right to take specific legal action if unsolicited advertising material, such as email spam,
-                    is received.</p>
-                <h2>3. Data collection on our website</h2>
-                <h3>Cookies</h3>
-                <p>Some of our web pages use cookies. Cookies do not harm your computer and do not contain any viruses. Cookies
-                    help make our website more user-friendly, efficient, and secure. Cookies are small text files that are
-                    stored on your computer and saved by your browser.</p>
-                <p>Most of the cookies we use are so-called "session cookies." They are automatically deleted after your visit.
-                    Other cookies remain in your device's memory until you delete them. These cookies make it possible to
-                    recognize your browser when you next visit the site.</p>
-                <p>You can configure your browser to inform you about the use of cookies so that you can decide on a case-by-case
-                    basis whether to accept or reject a cookie. Alternatively, your browser can be configured to automatically
-                    accept cookies under certain conditions or to always reject them, or to automatically delete cookies
-                    when closing your browser. Disabling cookies may limit the functionality of this website.</p>
-                <p>Cookies which are necessary to allow electronic communications or to provide certain functions you wish to
-                    use (such as the shopping cart) are stored pursuant to Art. 6 paragraph 1, letter f of DSGVO. The website
-                    operator has a legitimate interest in the storage of cookies to ensure an optimized service provided
-                    free of technical errors. If other cookies (such as those used to analyze your surfing behavior) are
-                    also stored, they will be treated separately in this privacy policy.</p>
-                <h3>Server log files</h3>
-                <p>The website provider automatically collects and stores information that your browser automatically transmits
-                    to us in "server log files". These are:</p>
-                <ul>
-                    <li>Browser type and browser version</li>
-                    <li>Operating system used</li>
-                    <li>Referrer URL</li>
-                    <li>Host name of the accessing computer</li>
-                    <li>Time of the server request</li>
-                    <li>IP address</li>
-                </ul>
-                <p>These data will not be combined with data from other sources.</p>
-                <p>The basis for data processing is Art. 6 (1) (f) DSGVO. The website operator has a legitimate interest to
-                    ensure an optimized service provided free of technical errors. Therefore server log files have to be
-                    stored.</p>
-                <h3>Contact form</h3>
-                <p>Should you send us questions via the contact form, we will collect the data entered on the form, including
-                    the contact details you provide, to answer your question and any follow-up questions. We do not share
-                    this information without your permission.</p>
-                <p>We will, therefore, process any data you enter onto the contact form only with your consent per Art. 6 (1)(a)
-                    DSGVO. You may revoke your consent at any time. An informal email making this request is sufficient.
-                    The data processed before we receive your request may still be legally processed.</p>
-                <p>We will retain the data you provide on the contact form until you request its deletion, revoke your consent
-                    for its storage, or the purpose for its storage no longer pertains (e.g. after fulfilling your request).
-                    Any mandatory statutory provisions, especially those regarding mandatory data retention periods, remain
-                    unaffected by this provision.</p>
-                <h2>4. Analytics and advertising</h2>
-                <h3>Google Analytics</h3>
-                <p>This website uses Google Analytics, a web analytics service. It is operated by Google Inc., 1600 Amphitheatre
-                    Parkway, Mountain View, CA 94043, USA.</p>
-                <p>Google Analytics uses so-called "cookies". These are text files that are stored on your computer and that
-                    allow an analysis of the use of the website by you. The information generated by the cookie about your
-                    use of this website is usually transmitted to a Google server in the USA and stored there.</p>
-                <p>Google Analytics cookies are stored based on Art. 6 (1) (f) DSGVO. The website operator has a legitimate
-                    interest in analyzing user behavior to optimize both its website and its advertising.</p>
-                <p>
-                    <strong>IP anonymization</strong>
-                </p>
-                <p>We have activated the IP anonymization feature on this website. Your IP address will be shortened by Google
-                    within the European Union or other parties to the Agreement on the European Economic Area prior to transmission
-                    to the United States. Only in exceptional cases is the full IP address sent to a Google server in the
-                    US and shortened there. Google will use this information on behalf of the operator of this website to
-                    evaluate your use of the website, to compile reports on website activity, and to provide other services
-                    regarding website activity and Internet usage for the website operator. The IP address transmitted by
-                    your browser as part of Google Analytics will not be merged with any other data held by Google.</p>
-                <p>
-                    <strong>Browser plugin</strong>
-                </p>
-                <p>You can prevent these cookies being stored by selecting the appropriate settings in your browser. However,
-                    we wish to point out that doing so may mean you will not be able to enjoy the full functionality of this
-                    website. You can also prevent the data generated by cookies about your use of the website (incl. your
-                    IP address) from being passed to Google, and the processing of these data by Google, by downloading and
-                    installing the browser plugin available at the following link:
-                    <a href="https://tools.google.com/dlpage/gaoptout?hl=en" target="_blank">https://tools.google.com/dlpage/gaoptout?hl=en</a>.</p>
-                <p>
-                    <strong>Objecting to the collection of data</strong>
-                </p>
-                <p>You can prevent the collection of your data by Google Analytics by clicking on the following link. An opt-out
-                    cookie will be set to prevent your data from being collected on future visits to this site:
-                    <a href="javascript:gaOptout();">Disable Google Analytics</a>.</p>
-                <p>For more information about how Google Analytics handles user data, see Google's privacy policy:
-                    <a href="https://support.google.com/analytics/answer/6004245?hl=en" target="_blank">https://support.google.com/analytics/answer/6004245?hl=en</a>.</p>
-                <p>
-                    <strong>Outsourced data processing</strong>
-                </p>
-                <p>We have entered into an agreement with Google for the outsourcing of our data processing and fully implement
-                    the strict requirements of the German data protection authorities when using Google Analytics.</p>
-
-                <h2>5. Newsletter</h2>
-                <h3>Newsletter data</h3>
-                <p>If you would like to receive our newsletter, we require a valid email address as well as information that
-                    allows us to verify that you are the owner of the specified email address and that you agree to receive
-                    this newsletter. No additional data is collected or is only collected on a voluntary basis. We only use
-                    this data to send the requested information and do not pass it on to third parties.</p>
-                <p>We will, therefore, process any data you enter onto the contact form only with your consent per Art. 6 (1)
-                    (a) DSGVO. You can revoke consent to the storage of your data and email address as well as their use
-                    for sending the newsletter at any time, e.g. through the "unsubscribe" link in the newsletter. The data
-                    processed before we receive your request may still be legally processed.</p>
-                <p>The data provided when registering for the newsletter will be used to distribute the newsletter until you
-                    cancel your subscription when said data will be deleted. Data we have stored for other purposes (e.g.
-                    email addresses for the members area) remain unaffected.</p>
-                <h3>MailChimp</h3>
-                <p>This website uses the services of MailChimp to send newsletters. This service is provided by Rocket Science
-                    Group LLC, 675 Ponce De Leon Ave NE, Suite 5000, Atlanta, GA 30308, USA.</p>
-                <p>MailChimp is a service which organizes and analyzes the distribution of newsletters. If you provide data
-                    (e.g. your email address) to subscribe to our newsletter, it will be stored on MailChimp servers in the
-                    USA.</p>
-                <p>MailChimp is certified under the EU-US Privacy Shield. The Privacy Shield is an agreement between the European
-                    Union (EU) and the US to ensure compliance with European privacy standards in the United States.</p>
-                <p>We use MailChimp to analyze our newsletter campaigns. When you open an email sent by MailChimp, a file included
-                    in the email (called a web beacon) connects to MailChimp's servers in the United States. This allows
-                    us to determine if a newsletter message has been opened and which links you click on. In addition, technical
-                    information is collected (e.g. time of retrieval, IP address, browser type, and operating system). This
-                    information cannot be assigned to a specific recipient. It is used exclusively for the statistical analysis
-                    of our newsletter campaigns. The results of these analyses can be used to better tailor future newsletters
-                    to your interests.</p>
-                <p>If you do not want your usage of the newsletter to be analyzed by MailChimp, you will have to unsubscribe
-                    from the newsletter. For this purpose, we provide a link in every newsletter we send. You can also unsubscribe
-                    from the newsletter directly on the website.</p>
-                <p>Data processing is based on Art. 6 (1) (a) DSGVO. You may revoke your consent at any time by unsubscribing
-                    to the newsletter. The data processed before we receive your request may still be legally processed.</p>
-                <p>The data provided when registering for the newsletter will be used to distribute the newsletter until you
-                    cancel your subscription when said data will be deleted from our servers and those of MailChimp. Data
-                    we have stored for other purposes (e.g. email addresses for the members area) remains unaffected.</p>
-                <p>For details, see the MailChimp privacy policy at
-                    <a href="https://mailchimp.com/legal/terms/" target="_blank">https://mailchimp.com/legal/terms/</a>.</p>
-                <p>
-                    <strong>Completion of a data processing agreement</strong>
-                </p>
-                <p>We have entered into a data processing agreement with MailChimp, in which we require MailChimp to protect
-                    the data of our customers and not to disclose said data to third parties. This agreement may be viewed
-                    at the following link:
-                    <a href="https://mailchimp.com/legal/forms/data-processing-agreement/sample-agreement/" target="_blank">https://mailchimp.com/legal/forms/data-processing-agreement/sample-agreement/</a>.</p>
-                <h2>6. Plugins and tools</h2>
-                <h3>YouTube</h3>
-                <p>Our website uses plugins from YouTube, which is operated by Google. The operator of the pages is YouTube
-                    LLC, 901 Cherry Ave., San Bruno, CA 94066, USA.</p>
-                <p>If you visit one of our pages featuring a YouTube plugin, a connection to the YouTube servers is established.
-                    Here the YouTube server is informed about which of our pages you have visited.</p>
-                <p>If you're logged in to your YouTube account, YouTube allows you to associate your browsing behavior directly
-                    with your personal profile. You can prevent this by logging out of your YouTube account.</p>
-                <p>YouTube is used to help make our website appealing. This constitutes a justified interest pursuant to Art.
-                    6 (1) (f) DSGVO.</p>
-                <p>Further information about handling user data, can be found in the data protection declaration of YouTube
-                    under
-                    <a href="https://www.google.de/intl/de/policies/privacy" target="_blank">https://www.google.de/intl/de/policies/privacy</a>.</p>
-                <h3>Vimeo</h3>
-                <p>Our website uses features provided by the Vimeo video portal. This service is provided by Vimeo Inc., 555
-                    West 18th Street, New York, New York 10011, USA.</p>
-                <p>If you visit one of our pages featuring a Vimeo plugin, a connection to the Vimeo servers is established.
-                    Here the Vimeo server is informed about which of our pages you have visited. In addition, Vimeo will
-                    receive your IP address. This also applies if you are not logged in to Vimeo when you visit our website
-                    or do not have a Vimeo account. The information is transmitted to a Vimeo server in the US, where it
-                    is stored.</p>
-                <p>If you are logged in to your Vimeo account, Vimeo allows you to associate your browsing behavior directly
-                    with your personal profile. You can prevent this by logging out of your Vimeo account.</p>
-                <p>For more information on how to handle user data, please refer to the Vimeo Privacy Policy at
-                    <a href="https://vimeo.com/privacy" target="_blank">https://vimeo.com/privacy</a>.</p>
-                <h3>Google Web Fonts</h3>
-                <p>For uniform representation of fonts, this page uses web fonts provided by Google. When you open a page, your
-                    browser loads the required web fonts into your browser cache to display texts and fonts correctly.</p>
-                <p>For this purpose your browser has to establish a direct connection to Google servers. Google thus becomes
-                    aware that our web page was accessed via your IP address. The use of Google Web fonts is done in the
-                    interest of a uniform and attractive presentation of our website. This constitutes a justified interest
-                    pursuant to Art. 6 (1) (f) DSGVO.</p>
-                <p>If your browser does not support web fonts, a standard font is used by your computer.</p>
-                <p>Further information about handling user data, can be found at
-                    <a href="https://developers.google.com/fonts/faq" target="_blank">https://developers.google.com/fonts/faq</a> and in Google's privacy policy at
-                    <a href="https://www.google.com/policies/privacy/" target="_blank">https://www.google.com/policies/privacy/</a>.</p>
-                <h3>Google Maps</h3>
-                <p>This site uses the Google Maps map service via an API. It is operated by Google Inc., 1600 Amphitheatre Parkway,
-                    Mountain View, CA 94043, USA.</p>
-                <p>To use Google Maps, it is necessary to save your IP address. This information is generally transmitted to
-                    a Google server in the USA and stored there. The provider of this site has no influence on this data
-                    transfer.</p>
-                <p>The use of Google Maps is in the interest of making our website appealing and to facilitate the location
-                    of places specified by us on the website. This constitutes a justified interest pursuant to Art. 6 (1)
-                    (f) DSGVO.</p>
-                <p>Further information about handling user data, can be found in the data protection declaration of Google at
-                    <a href="https://www.google.de/intl/de/policies/privacy/" target="_blank">https://www.google.de/intl/de/policies/privacy/</a>.</p>
-
-            </div>
-        </div>
 
         <script src="./Berghaintrainer_files/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
@@ -594,4 +282,8 @@
         <script src="./Berghaintrainer_files/logsKopie.js"></script>
 
 
-</div><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_0_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" src="./Berghaintrainer_files/ads.html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!0" data-load-complete="true"></iframe></ins></ins></ins><iframe id="google_osd_static_frame_563300173250" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./Berghaintrainer_files/saved_resource.html"></iframe><canvas width="11px" height="781px" id="renderCanvas" style="display:none;"></canvas></body><iframe id="google_esf" name="google_esf" src="./Berghaintrainer_files/zrt_lookup.html" data-ad-client="ca-pub-1758545721344943" style="display: none;"></iframe></html>
+</div>
+
+<ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_0_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" src="./Berghaintrainer_files/ads.html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!0" data-load-complete="true"></iframe></ins></ins></ins><iframe id="google_osd_static_frame_563300173250" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./Berghaintrainer_files/saved_resource.html"></iframe><canvas width="11px" height="781px" id="renderCanvas" style="display:none;"></canvas></body><iframe id="google_esf" name="google_esf" src="./Berghaintrainer_files/zrt_lookup.html" data-ad-client="ca-pub-1758545721344943" style="display: none;"></iframe>
+
+</html>
