@@ -96,38 +96,54 @@ if (cho == 1) {
   );
 }
 
-var question1_1 = { sauce: 'videos/question1-1.mp4', timecode: '4.5', subtitlestart: '3600', subtitleend: '7600', subtitle: 'Is this your first time?' };
-var question1_2 = { sauce: 'videos/question1-2.mp4', timecode: '4.5', subtitlestart: '3600', subtitleend: '7600', subtitle: 'Have you been here before?' };
-var question1_3 = { sauce: 'videos/question1-3.mp4', timecode: '6.3', subtitlestart: '5680', subtitleend: '9680', subtitle: 'How old are you?' };
-var question1_4 = { sauce: 'videos/question1-4.mp4', timecode: '3.2', subtitlestart: '2720', subtitleend: '6720', subtitle: 'Are you alone?' };
+var question1_1 = { sauce: 'videos/question1-1.mp4', timecode: '4.5', subtitlestart: '3600', subtitleend: '7600', subtitle: 'Zdravím, jste v rizikové skupině?' };
+var question1_1a = { sauce: 'videos/question1-1.mp4', timecode: '4.5', subtitlestart: '3600', subtitleend: '7600', subtitle: 'Jste riziková skupina?' };
+var question1_2 = { sauce: 'videos/question1-2.mp4', timecode: '4.5', subtitlestart: '3600', subtitleend: '7600', subtitle: 'Dobrý den, jaký máte zákonný nárok na očkování?' };
+var question1_2a = { sauce: 'videos/question1-2.mp4', timecode: '4.5', subtitlestart: '3600', subtitleend: '7600', subtitle: 'Proč se jdete očkovat?' };
+var question1_3 = { sauce: 'videos/question1-3.mp4', timecode: '6.3', subtitlestart: '5680', subtitleend: '9680', subtitle: 'Dobrý den, kolik Vám je let?' };
+var question1_3a = { sauce: 'videos/question1-3.mp4', timecode: '6.3', subtitlestart: '5680', subtitleend: '9680', subtitle: 'Stát! Z jakého jste okresu?!' };
+var question1_4 = { sauce: 'videos/question1-4.mp4', timecode: '3.2', subtitlestart: '2720', subtitleend: '6720', subtitle: 'Rok narození?' };
+var question1_4a = { sauce: 'videos/question1-4.mp4', timecode: '3.2', subtitlestart: '2720', subtitleend: '6720', subtitle: 'Stůjte! Kolik Vám je?!' };
 
-var question2_1 = { sauce: 'videos/question2-1.mp4', timecode: '1.7', subtitlestart: '1000', subtitleend: '5000', subtitle: 'Who is playing tonight?' };
-var question2_2 = { sauce: 'videos/question2-2.mp4', timecode: '1.9', subtitlestart: '1000', subtitleend: '5000', subtitle: 'Do you know who is spinning tonight?' };
-var question2_3 = { sauce: 'videos/question2-3.mp4', timecode: '2.1', subtitlestart: '1000', subtitleend: '5000', subtitle: 'Do you think you are at the right place?' };
-var question2_4 = { sauce: 'videos/question2-4.mp4', timecode: '2.3', subtitlestart: '1000', subtitleend: '5000', subtitle: 'Why should I let you in?' };
+var question2_1 = { sauce: 'videos/question2-1.mp4', timecode: '1.7', subtitlestart: '1000', subtitleend: '5000', subtitle: 'Preferujete západní nebo východní vakcínu?' };
+var question2_1a = { sauce: 'videos/question2-1.mp4', timecode: '1.7', subtitlestart: '1000', subtitleend: '5000', subtitle: 'Chcete americkou, nebo ruskou vakcínu?' };
+var question2_2 = { sauce: 'videos/question2-2.mp4', timecode: '1.9', subtitlestart: '1000', subtitleend: '5000', subtitle: 'Bude Vám vadit neschválená vakcína?' };
+var question2_2a = { sauce: 'videos/question2-2.mp4', timecode: '1.9', subtitlestart: '1000', subtitleend: '5000', subtitle: 'Vadila by Vám pouze poloviční dávka?' };
+var question2_3 = { sauce: 'videos/question2-3.mp4', timecode: '2.1', subtitlestart: '1000', subtitleend: '5000', subtitle: 'Bude Vám vadit jet na očkování do Karviné?' };
+var question2_3a = { sauce: 'videos/question2-3.mp4', timecode: '2.1', subtitlestart: '1000', subtitleend: '5000', subtitle: 'Porušujete vládní protipandemická opatření?' };
+var question2_4 = { sauce: 'videos/question2-4.mp4', timecode: '2.3', subtitlestart: '1000', subtitleend: '5000', subtitle: 'Proč potřebujete očkovat?' };
+var question2_4a = { sauce: 'videos/question2-4.mp4', timecode: '2.3', subtitlestart: '1000', subtitleend: '5000', subtitle: 'Zemřel Vám někdo v rodině na koronavirus?' };
 
-var question3_1 = { sauce: 'videos/question3-1.mp4', timecode: '1.9', subtitlestart: '1000', subtitleend: '5000', subtitle: 'Are you drunk?' };
-var question3_2 = { sauce: 'videos/question3-2.mp4', timecode: '1.7', subtitlestart: '1000', subtitleend: '5000', subtitle: 'Where are you coming from?' };
-var question3_3 = { sauce: 'videos/question3-3.mp4', timecode: '1.7', subtitlestart: '1000', subtitleend: '5000', subtitle: 'Have you taken drugs tonight?' };
-var question3_4 = { sauce: 'videos/question3-4.mp4', timecode: '1.5', subtitlestart: '1000', subtitleend: '5000', subtitle: 'Are you on drugs?' };
+var question3_1 = { sauce: 'videos/question3-1.mp4', timecode: '1.9', subtitlestart: '1000', subtitleend: '5000', subtitle: 'Koho budete volit?' };
+var question3_1a = { sauce: 'videos/question3-1.mp4', timecode: '1.9', subtitlestart: '1000', subtitleend: '5000', subtitle: 'Jaký je Váš názor na současnou vládu?' };
+var question3_2 = { sauce: 'videos/question3-2.mp4', timecode: '1.7', subtitlestart: '1000', subtitleend: '5000', subtitle: 'Máte známé?' };
+var question3_2a = { sauce: 'videos/question3-2.mp4', timecode: '1.7', subtitlestart: '1000', subtitleend: '5000', subtitle: 'Považujete se za vlivného člověka?' };
+var question3_3 = { sauce: 'videos/question3-3.mp4', timecode: '1.7', subtitlestart: '1000', subtitleend: '5000', subtitle: 'Jaký je Váš příjem?' };
+var question3_3a = { sauce: 'videos/question3-3.mp4', timecode: '1.7', subtitlestart: '1000', subtitleend: '5000', subtitle: 'Co si myslíte o Čapím hnízdě?' };
+var question3_4 = { sauce: 'videos/question3-4.mp4', timecode: '1.5', subtitlestart: '1000', subtitleend: '5000', subtitle: 'Jste v nějaké politické straně?' };
+var question3_4a = { sauce: 'videos/question3-4.mp4', timecode: '1.5', subtitlestart: '1000', subtitleend: '5000', subtitle: 'Díváte se na 168 hodin?' };
 
-var question4_1 = { sauce: 'videos/question4-1.mp4', timecode: '3', subtitlestart: '3000', subtitleend: '7000', subtitle: 'Not today.' };
-var question4_2 = { sauce: 'videos/question4-2.mp4', timecode: '4', subtitlestart: '3000', subtitleend: '7000', subtitle: 'Move.' };
-var question4_3 = { sauce: 'videos/question4-3.mp4', timecode: '1', subtitlestart: '1640', subtitleend: '5640', subtitle: 'Sorry, we are full tonight.' };
-var question4_4 = { sauce: 'videos/question4-4.mp4', timecode: '2', subtitlestart: '2000', subtitleend: '6000', subtitle: 'Sorry, not today.' };
+var question4_1 = { sauce: 'videos/question4-1.mp4', timecode: '3', subtitlestart: '3000', subtitleend: '7000', subtitle: 'Hm, dneska ne, zkuste to zítra.' };
+var question4_1a = { sauce: 'videos/question4-1.mp4', timecode: '3', subtitlestart: '3000', subtitleend: '7000', subtitle: 'Pryč!' };
+var question4_2 = { sauce: 'videos/question4-2.mp4', timecode: '4', subtitlestart: '3000', subtitleend: '7000', subtitle: 'Jděte, dnes už máme plno.' };
+var question4_2a = { sauce: 'videos/question4-2.mp4', timecode: '4', subtitlestart: '3000', subtitleend: '7000', subtitle: 'Zmizte odsud!' };
+var question4_3 = { sauce: 'videos/question4-3.mp4', timecode: '1', subtitlestart: '1640', subtitleend: '5640', subtitle: 'Máme plno. Sorry jako.' };
+var question4_3a = { sauce: 'videos/question4-3.mp4', timecode: '1', subtitlestart: '1640', subtitleend: '5640', subtitle: 'Stavte se na podzim.' };
+var question4_4 = { sauce: 'videos/question4-4.mp4', timecode: '2', subtitlestart: '2000', subtitleend: '6000', subtitle: 'Pro Vás tu dneska vakcínu nemáme.' };
+var question4_4a = { sauce: 'videos/question4-4.mp4', timecode: '2', subtitlestart: '2000', subtitleend: '6000', subtitle: 'Pst, dnes nic, ale zkusíme něco vymyslet, ozvi se.' };
 
-var entry_1 = { sauce: 'videos/entry_1.mp4', timecode: '2', subtitlestart: '1500', subtitleend: '4500', subtitle: 'Ok, come in.' };
+var entry_1 = { sauce: 'videos/entry_1.mp4', timecode: '2', subtitlestart: '1500', subtitleend: '4500', subtitle: 'Dobře, pojďte dovnitř!' };
 
-var question1 = Array(question1_1, question1_2, question1_3, question1_4);
+var question1 = Array(question1_1, question1_2, question1_3, question1_4, question1_1a, question1_2a, question1_3a, question1_4a);
 var question1 = question1[Math.floor(Math.random() * question1.length)];
 
-var question2 = Array(question2_1, question2_2, question2_3, question2_4);
+var question2 = Array(question2_1, question2_2, question2_3, question2_4, question2_1a, question2_2a, question2_3a, question2_4a);
 var question2 = question2[Math.floor(Math.random() * question2.length)];
 
-var question3 = Array(question3_1, question3_2, question3_3, question3_4);
+var question3 = Array(question3_1, question3_2, question3_3, question3_4, question3_1a, question3_2a, question3_3a, question3_4a);
 var question3 = question3[Math.floor(Math.random() * question3.length)];
 
-var question4 = Array(question4_1, question4_2, question4_3, question4_4);
+var question4 = Array(question4_1, question4_2, question4_3, question4_4, question4_1a, question4_2a, question4_3a, question4_4a);
 var question4 = question4[Math.floor(Math.random() * question4.length)];
 
 var entry = entry_1;
@@ -183,14 +199,20 @@ function startTraining() {
   $('#introvideo').show();
   $('#introvideo').get(0).play();
   setTimeout(function () {
-    $('#subtitle').empty().text('Zdravotní kontrolor Úřadu vlády ČR se Vás zeptá na několik otázek.');
-  }, 6000);
+    $('#subtitle').empty().text('Blížíte se k zdravotnímu maršálovi Vlády ČR.');
+  }, 3500);
   setTimeout(function () {
-    $('#subtitle').empty().text('Odpovězte správně a dostaňte se do očkovacího centra.');
-  }, 12000);
+    $('#subtitle').empty().text('Odpovězte dle nejlepšího vědomí a svědomí na jeho otázky');
+  }, 11500);
+  setTimeout(function () {
+    $('#subtitle').empty().text('a získejte přístup do polního vakcinačního centra,');
+  }, 15500);
+  setTimeout(function () {
+    $('#subtitle').empty().text('kde dostanete očkování.');
+  }, 19500);
   setTimeout(function () {
     $('#subtitle').empty();
-  }, 18000);
+  }, 22000);
 }
 
 $('#introvideo').on('ended', function () {
