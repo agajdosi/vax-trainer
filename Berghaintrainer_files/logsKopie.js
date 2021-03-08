@@ -52,7 +52,6 @@ Pace.on('done', function () {
 
   if ($('#introsound')[0].paused) {
     // audio not playing. show auto play hint
-    console.log('show runs');
     $('#intro').css('display', 'none').hide();
     $('#noAutoplay').css('display', 'flex').hide().fadeIn();
   } else {
@@ -173,6 +172,10 @@ $('.privacylink').click(function () {
 function whoMadeThis() {
   alert('spiffy guys');
   window.location.href = 'https://sansho.studio/';
+}
+
+function createAudio() {
+  wavesurfer.backend.ac.resume();
 }
 
 function startedByAudio() {
@@ -630,7 +633,6 @@ function initCamera() {
 
   var y = d3.scale.linear().domain([0, 1]).range([0, height]);
 
-  console.log(height, margin.top, margin.bottom);
   var svg = d3
     .select('#emotion_chart')
     .append('svg')
