@@ -6,6 +6,8 @@
 // |___/\__,_|_| |_|___/_| |_|\___/  |_| \___/|_|  \___| \_/ \___|_| and ever and ever ...
 //
 //
+// thank you Sansho so much.
+// sorry for this appropriation, but it was necessary.
 //
 
 var numberOfQuestions = 1;
@@ -203,19 +205,16 @@ function startTraining() {
   $('#introvideo').get(0).play();
   setTimeout(function () {
     $('#subtitle').empty().text('Blížíte se k zdravotnímu maršálovi Vlády ČR.');
-  }, 3500);
+  }, 3800);
   setTimeout(function () {
     $('#subtitle').empty().text('Odpovězte dle nejlepšího vědomí a svědomí na jeho otázky');
-  }, 11500);
+  }, 11600);
   setTimeout(function () {
-    $('#subtitle').empty().text('a získejte přístup do polního vakcinačního centra,');
-  }, 15500);
-  setTimeout(function () {
-    $('#subtitle').empty().text('kde dostanete očkování.');
-  }, 19500);
+    $('#subtitle').empty().text('a získejte přístup do polního očkovacího centra.');
+  }, 16000);
   setTimeout(function () {
     $('#subtitle').empty();
-  }, 22000);
+  }, 20000);
 }
 
 $('#introvideo').on('ended', function () {
